@@ -1,0 +1,21 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>My Motorcycle Customizer</title>
+    <script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+</head>
+<body>
+    <h1>Welcome to Your Motorcycle Customizer</h1>
+    <p>Login below:</p>
+
+    <button onclick="netlifyIdentity.open()">Login</button>
+
+    <script>
+        netlifyIdentity.on('login', () => {
+            window.location.reload();
+        });
+    </script>
+</body>
+</html>
