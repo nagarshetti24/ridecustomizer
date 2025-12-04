@@ -1,0 +1,16 @@
+body {
+    background: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+#bike {
+    width: 70%;
+    transition: transform 0.05s linear;
+    transform-style: preserve-3d;
+    cursor: grab;
+}
+#bike:active {
+    cursor: grabbing;
+}
